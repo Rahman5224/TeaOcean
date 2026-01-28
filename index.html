@@ -43,6 +43,11 @@ html, body {
         }
         /* Sticky Navigation */
         nav {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        nav {
             background-color: #d2b48c; /* Light brown */
             padding: 10px 0;
             position: sticky;
@@ -265,6 +270,32 @@ html, body {
             .cta-buttons { flex-direction: column; align-items: center; }
             .contact-grid { grid-template-columns: 1fr; }
         }
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            .container, section {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            button {
+                width: 90%;
+                max-width: 260px;
+            }
+            header, .hero, .banner {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -404,6 +435,7 @@ html, body {
 </body>
 
 </html>
+
 
 
 
